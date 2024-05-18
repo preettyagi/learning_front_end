@@ -1,0 +1,20 @@
+.heading-one{
+    color: #319cce;
+    background-color: yellowgreen;
+    font-family: 'Segoe UI';
+    font-size: 60px;
+    font-weight: 1000;/*bold, bolder, lighter*/
+    text-align: center;
+}
+
+img{
+    height: auto;
+    width: 720px;
+}
+
+.img-desc{
+    color: violet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: 300;
+}

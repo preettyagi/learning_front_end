@@ -1,0 +1,80 @@
+.main-heading {
+    color: aqua;
+    background-color: tan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.flex-parent {
+    height: 140px;
+    padding: 15px;
+    background-color: plum;
+    border: 5px  solid purple;
+    display: flex;
+    justify-content: center; /* aligns it based on main axis of flex in default case Horizontal */
+    align-items: center; /* Similer to above but in default case aligns to vertically */
+    gap: 12px;
+}
+
+.flex-parent div{
+    border: 2px solid brown;
+    background-color: peachpuff;
+    width: 60px;
+    height: 60px;
+    /* flex: 1 1 auto; */
+    /* overflow-x: auto; */
+     /*Flex is actually a shorthand for flex-grow, flex-shrink, flex=basis || flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0
+    when we put flex: 1 on our divs, we were actually specifying a shorthand of flex: 1 1 0
+    || no flex have flex-shrink but no grow */
+}
+/* flex-basis sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size.
+ The shorthand value defaults to flex-basis: 0%. The reason we had to change it 
+to auto in the flex-shrink example is that with the basis set to 0, those items 
+would ignore the item’s width, and everything would shrink evenly. Using auto as a 
+flex-basis tells the item to check for a width declaration */
+
+.flex-parent .two{
+    flex-shrink: 0;
+}
+
+/* .flex-parent .three{
+    flex-shrink: 0;
+} */
+
+form {
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 180px;
+  }
+  .name {
+    flex-grow: 1;
+    flex-basis: 160px;
+  }
+  .email {
+    flex-grow: 3;
+    flex-basis: 200px;
+  }
+  .submit-button {
+    flex-grow: 1;
+    flex-basis: 80px;
+  }
+
+  #name {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  #email{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+

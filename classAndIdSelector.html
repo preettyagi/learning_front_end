@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Class and ID selector</title>
+        <link rel="stylesheet" href="classAndIdSelectorStyle.css">
+    </head>
+    <body>
+        <p class="base-title">Number 1 - I'm a class!</p>
+        <div id="n2">Number 2 - I'm one ID.</div>
+        <p class="base-title big-font">Number 3 - I'm a class, but cooler!</p>
+        <div id="n4">Number 4 - I'm another ID.</div>
+        <p class="base-title">Number 5 - I'm a class!</p>
+        
+        <!-- Grouping selectors -->
+        <button class="b1">Click Me!</button>
+        <button class="b2">No, Click Me!</button>
+
+        <!-- Chaining Selectors-->
+        <div>
+            <img class="avatar proportioned" src="https://i.pinimg.com/originals/a4/26/82/a42682c0a0d399fbc64179d7dd6e6a0d.jpg" alt="Stone Hashira">
+            <img class="avatar distorted" src="https://i.pinimg.com/originals/22/b9/bc/22b9bc984889d1faa6d65fbc98391c0b.jpg" alt="Water Hashira">
+        </div>
+        
+        <!-- Descendant Combinator -->
+        <div class="parent">
+            <p class="child">This should be styled!</p>
+            <div>This should be unstyled</div>
+            <div>This should be unstyled</div>
+            <p class="child">This should be styled!</p>
+            <p class="child">This should be styled!</p>
+        </div>
+    </body>
+</html>

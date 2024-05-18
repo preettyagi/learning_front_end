@@ -1,0 +1,50 @@
+.base-title{
+    background-color: pink;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#n2{
+    color: blue;
+    font-size: 36px;
+}
+
+.big-font{
+    font-size: 24px;
+}
+
+#n4{
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.b1.b2{
+    font-size: 28px;
+    font-family: Arial, Helvetica, 'Times New Roman', sans-serif;
+}
+
+.b1{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.b2{
+    background-color: yellow;
+}
+
+.avatar.proportioned{
+    width: 300px;
+}
+
+.avatar.distorted{
+    width: 200px;
+    height: 400px;
+}
+
+div p{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
